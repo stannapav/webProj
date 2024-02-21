@@ -1,0 +1,23 @@
+.center{
+    text-align: center;
+    align-items: center;
+}
+
+.color{
+    color: rgb(181, 60, 128);
+}
+
+li{
+    color: rgb(113, 95, 177);
+}
+
+dt{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:green;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+}
