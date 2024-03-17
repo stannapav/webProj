@@ -1,3 +1,15 @@
+@keyframes rotation {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(360deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes makeBig {
+  0% {font-size: medium;}
+  50% {font-size: xx-large;}
+  100% {font-size: medium;}
+}
+
 .title {
   font-size: 26px;
   display: flex;
@@ -68,9 +80,14 @@ img{
 }
 
 .myPhoto{
+  margin-left: 25px;
   height: 250px;
   width: auto;
   border-radius: 10%;
+}
+
+.myPhoto:hover{
+  animation: rotation 3s;
 }
 
 a:link{
@@ -83,4 +100,8 @@ a:visited{
 
 a:hover{
   color:rgb(83, 166, 133);
+}
+
+.beeg:hover{
+  animation: makeBig 4s infinite;
 }

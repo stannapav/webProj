@@ -1,0 +1,71 @@
+@keyframes bow {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(45deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes diffColor {
+    0% {background-color: red;}
+    20% {background-color: yellow;}
+    40% {background-color: green;}
+    60% {background-color: blue;}
+    80% {background-color: blueviolet;}
+    100% {background-color: red;}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes bounce {
+    0% {bottom: 0px}
+    50% {bottom: 15px}
+    100% {bottom: 0px}
+}
+
+@keyframes hide {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+h1{
+    text-align: center;
+    padding: 60px;
+    animation: rotate 3s infinite linear;
+}
+
+p{
+    position: relative;
+    animation: bounce 0.5s infinite ease-out;
+}
+
+.cube{
+    background-color:rgb(245, 195, 104);
+    width: 150px;
+    height: 150px;
+    margin: 35px;
+    animation: bow 3s ease-in-out infinite;
+}
+
+.colorChange{
+    background-color:red;
+    width: 150px;
+    height: 150px;
+    margin: 35px;
+}
+
+.colorChange:hover{
+    animation: diffColor 5s;
+}
+
+.hideCat{
+    height: 300px;
+    width: auto;
+}
+
+.hideCat:hover{
+    animation: hide 3s;
+}
