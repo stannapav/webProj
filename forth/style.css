@@ -1,0 +1,13 @@
+.table1, .tr1, .td1{
+    border: 1px dotted black;
+}
+
+.table2, .tr2, .td2{
+    border: 1px double black;
+} 
+
+.tables{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
